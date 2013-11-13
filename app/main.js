@@ -9,5 +9,7 @@ require.config({
 });
 
 define(['durandal/app', 'durandal/viewLocator', 'durandal/system', 'durandal/plugins/router'],
+    function (app, viewLocator, system, router) {
 
-});
+    }
+);
