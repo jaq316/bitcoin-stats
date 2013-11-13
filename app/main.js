@@ -5,7 +5,7 @@ requirejs.config({
         'durandal':'//cdn.jsdelivr.net/durandal/2.0.1/js/',
         'plugins' : '//cdn.jsdelivr.net/durandal/2.0.1/js/plugins/',
         'transitions' : '//cdn.jsdelivr.net/durandal/2.0.1/js/transitions/',
-        'ko': '//cdn.jsdelivr.net/knockout/2.3.0/knockout',
+        'knockout': '//cdn.jsdelivr.net/knockout/2.3.0/knockout',
         'bootstrap': '//cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap',
         'jquery': '//cdn.jsdelivr.net/jquery/2.0.3/jquery-2.0.3',
         'Q' : '//rawgithub.com/kriskowal/q/master/q',
@@ -18,6 +18,8 @@ requirejs.config({
         }
     }
 });
+
+define('ko', ['knockout'], function (ko) { return ko; });
 
 define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (system, app, viewLocator) {
     //>>excludeStart("build", true);
