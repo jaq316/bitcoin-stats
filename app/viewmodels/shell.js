@@ -14,9 +14,12 @@ function (system, router, logger, app, Q) {
         };
         
         function initRoutes() {
-            router.mapRoute('home', null, "Home", false);
-            log(app.title + ' Loaded!', null, false);
-            return true;
+            router.map([
+                { route: '',                    moduleId: 'home/index'                                          },
+                { route: 'home',                moduleId: 'home/index',                             nav: true   }
+            ]).buildNavigationModel();
+ 
+            return router.activate();        
         }
         function boot() {
             return router.activate('home');
