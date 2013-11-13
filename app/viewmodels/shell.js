@@ -15,15 +15,12 @@ function (system, router, logger, app, Q) {
         
         function initRoutes() {
             router.map([
-                { route: '',                    moduleId: 'home/index'                                          },
-                { route: 'home',                moduleId: 'home/index',                             nav: true   }
+                { route: '',                    moduleId: 'viewmodels/home/index'                                          },
+                { route: 'home',                moduleId: 'viewmodels/home/index',                             nav: true   }
             ]).buildNavigationModel();
  
             return router.activate();        
         }
-        function boot() {
-            return router.activate('home');
-        };
 
         function log(msg, data, showToast) {
             logger.info(msg, data, system.getModuleId(shell));
