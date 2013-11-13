@@ -8,7 +8,7 @@ requirejs.config({
         'knockout': '//cdn.jsdelivr.net/knockout/3.0.0/knockout',
         'bootstrap': '//cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap',
         'jquery': '//cdn.jsdelivr.net/jquery/2.0.3/jquery-2.0.3',
-        'Q' : '//rawgithub.com/kriskowal/q/master/q'
+        'Q' : '//rawgithub.com/kriskowal/q/master/q',
         'toastr' : '//cdn.jsdelivr.net/toastr/1.3.0/toastr.min'
     },
     shim: {
