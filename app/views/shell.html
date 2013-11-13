@@ -1,19 +1,20 @@
 <div>
-    <div id="loading-overlay" data-bind="visible: $root.router.isNavigating()">
-        <div class="progress progress-danger progress-striped active page-progress-bar" style="margin: 20% 10%">
-            <div class="bar" style="width: 100%;"></div>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <a class="brand" data-bind="attr: { href: router.navigationModel()[0].hash }">
+                <i class="icon-home"></i>
+                <span>Durandal Base</span>
+            </a>
+            <ul class="nav" data-bind="foreach: router.navigationModel">
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash }, html: title"></a>
+                </li>
+            </ul>
+            <div class="loader pull-right" data-bind="css: { active: router.isNavigating }">
+                <i class="icon-spinner icon-2x icon-spin"></i>
+            </div>
         </div>
     </div>
-    <header>
-        <!--ko compose: {view: 'nav'} -->
-        <!--/ko-->
-    </header>
-    <section id="content" class="main container-fluid">
-        <!--ko compose: {model: router.activeItem, transition: 'entrance'} -->
-        <!--/ko-->
-    </section>
-    <footer>
-        <!--ko compose: {view: 'footer'} -->
-        <!--/ko-->
-    </footer>
+ 
+    <div class="container-fluid page-host" data-bind="router: { transition:'entrance' }"></div>
 </div>
