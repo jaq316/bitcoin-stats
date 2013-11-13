@@ -7,7 +7,7 @@ requirejs.config({
         'knockout': '//cdn.jsdelivr.net/knockout/3.0.0/knockout',
         'bootstrap': '//cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap',
         'jquery': '//cdn.jsdelivr.net/jquery/2.0.3/jquery-2.0.3',
-        'Q' : 'https://rawgithub.com/kriskowal/q/master/q.js'
+        'Q' : 'https://rawgithub.com/kriskowal/q/master/q'
     },
     shim: {
         'bootstrap': {
