@@ -15,9 +15,6 @@ requirejs.config({
         'bootstrap': {
             deps: ['jquery'],
             exports: 'jQuery'
-        },
-        "Q": {
-          exports: "Q"  //attaches "Backbone" to the window object
         }
     }
 });
