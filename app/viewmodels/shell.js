@@ -1,5 +1,5 @@
 define(['durandal/system', 'durandal/plugins/router', 'services/logger', 'durandal/app', 'Q'], 
-function (system, router, logger, Q) {
+function (system, router, logger, app, Q) {
 
         //#region Initialization functions
         var initializers = [];
