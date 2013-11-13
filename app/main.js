@@ -8,7 +8,7 @@ requirejs.config({
         'knockout': '//cdn.jsdelivr.net/knockout/2.3.0/knockout',
         'bootstrap': '//cdn.jsdelivr.net/bootstrap/3.0.2/js/bootstrap',
         'jquery': '//cdn.jsdelivr.net/jquery/2.0.3/jquery-2.0.3',
-        'q' : '//rawgithub.com/kriskowal/q/master/q',
+        'Q' : '//rawgithub.com/kriskowal/q/v0.9/q.js',
         'toastr' : '//cdn.jsdelivr.net/toastr/1.3.0/toastr.min'
     },
     shim: {
@@ -20,7 +20,6 @@ requirejs.config({
 });
 
 define('ko', ['knockout'], function (ko) { return ko; });
-define('Q', ['q'], function () { return Q; });
 
 define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (system, app, viewLocator) {
     //>>excludeStart("build", true);
