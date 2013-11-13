@@ -17,7 +17,7 @@ requirejs.config({
             exports: 'jQuery'
         },
         "Q": {
-          exports: "q"  //attaches "Backbone" to the window object
+          exports: "Q"  //attaches "Backbone" to the window object
         }
     }
 });
