@@ -1,4 +1,5 @@
 requirejs.config({
+    enforceDefine: true,
     paths: {
         'text': '//cdn.jsdelivr.net/requirejs/2.1.9/plugins/text',
         'durandal':'//cdn.jsdelivr.net/durandal/2.0.1/js/',
