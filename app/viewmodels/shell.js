@@ -8,12 +8,11 @@ function (system, router, logger, app, Q) {
         //#region Internal Methods
 
         function activate() {
-            return Q.all(initializers).then(initRoutes)
-                .then(boot);
+            return Q.all(initializers).then(boot);
 
         };
         
-        function initRoutes() {
+        function boot() {
             router.map([
                 { route: '',                    moduleId: 'viewmodels/home/index'                                          },
                 { route: 'home',                moduleId: 'viewmodels/home/index',                             nav: true   }
